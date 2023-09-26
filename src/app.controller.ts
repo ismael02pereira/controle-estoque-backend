@@ -18,7 +18,7 @@ export class AppController {
   }
   @Post('cadastro')
   // @Header('Cache-Control', 'none')
-  create(@Body() data: AppService,@Res() res: Response) {
+  create(@Body() data: AppService, @Res() res: Response) {
 
     let obj_cadastro = this.appService.getTeste(data)
     if(obj_cadastro){
